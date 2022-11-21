@@ -5,32 +5,21 @@
     top: 70px;
     height:calc(100vh - 70px);
     overflow: scroll;
+    background-color: rgb(246, 214, 247);
     @include mobile{
       display: none;
     }
-    
+   
     @include tablet{
       display: none;
     }
-
 
     &::-webkit-scrollbar{
       display:none;
     }
 
 }
-
-.container {
-  
-    padding: 10px;
-    hr{
-        margin: 20px 20px;
-        height:1px;
-        
-    }
-    
-
-    .menu {
+  .menu {
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -55,21 +44,7 @@
           font-size: 14px;
         }
       }
-
-      .item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-        img {
-          width: 30px;
-        }
-
-        span {
-          font-size: 14px;
-        }
-      }
     }
-  }
+  
 
 

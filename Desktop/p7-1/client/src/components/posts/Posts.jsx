@@ -9,15 +9,15 @@ const Posts = ({userId}) => {
       return res.data;
     })
   );
-console.log(data);
- return (
+
+  return (
     <div className="posts">
-      { error
-        ?"Something went wrong!"
+      {error
+        ? "Something went wrong!"
         : isLoading
-        ?"loading"
- : data.map ((post) => <Post post={post} key={post.id} /> )} ;
-      </div>
+        ? "loading"
+        : data.map((post) => <Post post={post} key={post.id} />)}
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import { AuthContext } from "./context/authContext";
 import {
   createBrowserRouter,
   RouterProvider,
-  //Router,
+  Router,
   Outlet,
   Navigate
 } from "react-router-dom";
@@ -17,6 +17,7 @@ import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
 import "./style.scss";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
 
 
 function App() {

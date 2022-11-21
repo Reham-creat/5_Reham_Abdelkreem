@@ -1,15 +1,12 @@
-
-import Stories from "../../components/stories/Stories"
 import Posts from "../../components/posts/Posts"
 import Share from "../../components/share/Share"
 import "./home.scss"
 
-const Home = () => {
+const Home = ({userId}) => {
   return (
     <div className="home">
-      <Stories/>
       <Share/>
-      <Posts/>
+      <Posts userId={userId}/>
     </div>
   )
 }
